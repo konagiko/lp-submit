@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-/* リセットcss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -96,214 +95,483 @@ input, select {
     vertical-align:middle;
 }
 
-/* 共通のスタイル */
-.section-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin: 30px 0;
-  text-align: center;
+p {
+    font-size: 12px;
+    font-weight: normal;
 }
 
 img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
-.wrap {
-  width: 80%;
-  margin: 0 auto 50px;
+.button-area {
+    text-align: right;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+button {
+    width: 150px;
+    height: 35px;
+    padding: 0px;
+    margin-top: 2.0em;
+    background-color: white;
+    border: solid 1px black;
+    cursor: pointer;
 }
 
-.between {
-  justify-content: space-between;
-}
-
-.around {
-  justify-content: space-around;
-}
-
-
-header {
-    height: 70px;
-    background: #000;
-}
-
-.header-logo {
-    font-size: 20px;
+.section-title{
+    font-size: 30px;
     font-weight: bold;
-    margin-left: 35px;
-    color: #f2f2f2;
-    line-height: 70px;
+    text-align: center;
 }
 
-.header-nav li {
-    display: inline-block;
-    margin-right: 35px;
-    font-size: 16px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
 }
 
-.header-nav a {
-    color: #f2f2f2;
+.header p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 30px;
 }
 
-#eyecatch {
-    height: 600px;
-    background: url(../img/bg1.jpg) no-repeat;
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-list　p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.header-nav-list a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-nav-item {
+    font-size: 12px;
+    margin-right: 40px;
+}
+
+.eyecatch {
+    height: 800px;
+    background: url(../img/eyecatch.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-#eyecatch p {
+.eyecatch p {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.news-box {
+    width: 700px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 0px;
+}
+
+.news-left {
+    width: 80%;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.news-left p {
+    font-size: 12px;
+    font-style: normal;
+    color: black;
+    line-height: 1.5;
+    margin: 0px;
+    padding-left: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-right {
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    position: relative;
+}
+
+.news-right p {
+    font-size: 15px;
+    font-style: normal;
+    color:white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-    font-style: italic;
-    font-weight: bold;
-    color: #ccc;
-    line-height: 1;
-}
-
-#about {
-    line-height: 1.5;
-}
-
-.about-right h3,
-.about-right p {
-    margin-bottom: 15px;
-}
-
-
-.about-left,
-.about-right {
-    width: 45%;
-}
-
-.about-right ol {
-    list-style-position: inside;
-}
-
-#business {
-    background: url(../img/bg3.jpg) no-repeat;
-    background-size: cover;
-}
-
-#business .section-title {
-    color: #fff;
-    padding: 40px 0;
+    padding: 0;
     margin: 0;
 }
 
-.business-wrap {
-    text-align: center;
+.mission-area {
+    height: 500px;
+    background-color: black;
+    position: relative;
 }
 
-.business-cat {
-    width: 28%;
-    background-color: rgba(51, 51, 51, 0.5);
-    padding: 20px 35px 30px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-
+.mission {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
 }
 
-.business-cat h3 {
-    font-size: 18px;
+.mission-title {
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
+    text-align: left;
+    padding: 0px;
+    margin: 15px 0px;
 }
 
-.business-cat p {
-    color: #fff;
+.mission-text {
+    width: 730px;
+    height: 30px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5em;
+    padding: 0px;
+    margin: 30px 0px;
 }
 
-.business-cat img {
-    width: 100px;
-    height: auto;
-    margin: 0 auto 10px;
+.mission-image {
+    width: 45%;
+    position: absolute;
+    top: 26%;
+    right: 5%;
+    z-index: 1;
 }
 
-#company {
-    padding: 40px 0 70px 0;
+.empty {
+    height: 200px; 
+    background-color: white;
+    position: relative;
 }
 
-#company .contain {
-    border-collapse: collapse;
-    width: 70%;
-    margin: 0 auto;
+.service-area {
+    height: 1400px;
+    background: rgb(241, 241, 241);
+    position: relative;
 }
 
-#company table tr {
-    border-bottom: 1px solid #333333;
+.section-title {
+    padding: 15px 0;
 }
 
-#company th,
-#company td {
+.service-image {
+    width: 50%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    z-index: 1;
+}
+
+.service-textarea {
+    background: white;
+    width: 600px;
+    height: 290px;
+    padding: 0;
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    z-index: 2;
+}
+
+.service-textarea2 {
+    margin: 80px 70px;
+    padding: 0;
+}
+
+.service-textarea2 h3 {
+    font-size: 12px;
+    font-weight: bold;
     text-align: left;
 }
 
-#company th {
-    padding: 10px 0;
-}
-
-#contact {
-    background:  rgb(241, 241, 241);
-}
-
-#contact .section-title {
-    padding: 40px;
+.service-textarea2 h4 {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
     margin: 0;
-    color: #000;
+    padding: 20px 0;
+ 
 }
 
-.form {
+.service-textarea2 p {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.service-image2 {
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    z-index: 1;
+}
+
+.service-textarea3 {
+    background: white;
+    width: 600px;
+    height: 280px;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    z-index: 2;
+}
+
+.service-textarea4 {
+    margin: 80px 70px;
+    padding: 0;
+}
+
+.service-textarea4 h3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.service-textarea4 h4 {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    padding: 20px 0;
+ 
+}
+
+.service-textarea4 p {
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.company-information {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-image {
+    width: 48%;
+    height: 220px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.company-image img {
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+.company-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.company-text h2 {
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
+.company-text p {
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+
+.recruit-image{
+    width: 48%;
+    height: 220px;
+    margin: 150px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.recruit-image img{
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+.recruit-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.recruit-text h2 {
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+
+.recruit-text p {
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+
+.faq-area {
     width: 70%;
-    margin: 0 auto;
+    height: 100px;
+    display:flex;
+    margin: 0 auto 150px;
+    background: black;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
 }
 
-.form > div input {
-    margin-bottom: 20px;
-    padding: 7px;
+.faq-area h2{
+    color: white;
+    margin: 30px;
 }
 
-label {
-    display: inline-block;
-    width: 30%;
+.faq-area p{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
 }
 
-input, textarea {
-    box-sizing: border-box;
-    border: 1px solid #999;
-    width: 65%;
+.contact-area {
+    height: 500px;
+    background: url(../img/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-textarea {
-    vertical-align: top;
-    height: 200px;
-}
-
-.button-submit {
+.contact-textarea {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
 }
 
-.button {
-    padding: 10px 30px;
-    background-color: #000;
-    color: #fff;
+.contact-title h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-title p {
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 0 0 0;
+}
+
+.contact-message-1 p {
+    font-size: 30px;
     margin: 30px 0;
+    padding: 0;
 }
 
-#footer {
-    height: 80px;
+.contact-area button {
+    color: white;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 35px;
+    border: solid 1px white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: white;
+    background: black;
     text-align: center;
-    line-height: 80px;
 }
